@@ -424,7 +424,7 @@ body {
 
 .footer {
   background-image: url("../images/contact-background.jpg");
-  padding: 50px; }
+  padding: 50px 0 50px 0; }
 .footer .container {
   display: flex; }
 .footer .container .contactUs {
