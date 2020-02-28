@@ -1,0 +1,450 @@
+.aboutUs
+{
+	
+	.container{
+	
+			display: flex;
+		margin-top:50px;
+		margin-bottom: 50px;
+		.text
+		{
+			width: 50%;
+			line-height: 25px;
+			padding-left:15px;
+
+			h3
+			{
+				color:$headColor;
+				font-size: 30px;
+				margin-bottom: 20px
+			}
+			.details
+			{
+				display: flex;
+				margin-top:50px;
+				flex-wrap: wrap;
+				.part
+				{
+					width: 50%;
+					margin-bottom: 10px;
+					i 
+					{
+						background-color: #e2fdea;
+						padding: 10px;
+						border-radius: 50%;
+						margin-right: 10px;
+					}
+				}
+				button
+				{
+					margin-top: 20px;
+				}
+			}
+		}
+		.numbers
+		{
+			color:$buttonColor;
+			width:50%;
+			display: flex;
+			margin-top: 30px;
+			margin-left: 60px;
+			flex-wrap: wrap;
+			font-weight: 600;
+			.part
+			{
+				width: 50%;
+				padding-top: 5px;
+				font-size: 50px;
+				border:1px solid #666;
+				
+			   i
+				{
+					margin: 15px;
+					font-size: 30px;
+				}
+				
+				i,p
+				{
+					color:#666;
+					font-weight: 100;
+				}
+				p{
+					font-size: 20px;
+					margin-left: 40px;
+				}
+			}
+		}
+    }
+}
+.expertises
+{
+	background-color: #eef4f2;
+	padding: 50px 0 50px 0;
+	.container{
+		h2
+		{
+			margin-bottom: 20px;
+			color: $headColor;
+		}
+		.expertises-content
+		{
+			margin-top: 30px;
+			display: flex;
+			flex-wrap: wrap;
+				
+			.exp{
+				width: 33.333333%;
+				display: flex;
+				margin-bottom: 50px;
+				padding: 10px;
+				img{
+					border-radius: 50%;
+					padding: 5px;
+					background-color: #FFF;
+					width: 88px;
+					height: 88px;
+					margin-right: 20px;
+				}
+				.text{
+					h4
+					{
+						margin-bottom: 20px;
+						color: #1d2127;
+					}
+				}
+			}
+		}
+		button
+		{
+			margin-left: 45%;
+			margin-top: -10px;
+		}
+	}
+}
+.consulting
+{
+	padding: 50px;
+	.container{
+		display: flex;
+		
+		.strategy
+		{
+
+		
+			max-width: 50%;
+			position: relative;
+			h2
+			{
+				color: $headColor;
+				margin-bottom: 15px;
+			}
+			
+			.slider
+			{
+				
+				transition: .6s;
+				
+				.step
+				{
+					
+					.step-header
+					{
+						
+						display: flex;
+						margin-bottom: 10px;
+						
+						.number-step
+						{
+							margin-right: 10px;
+							border-right: .5px solid #666;
+							padding-right: 10px;
+							span
+							{
+								color:$buttonColor;
+								font-weight: 700;
+								font-size:40px;
+								width: 25px
+							}
+						}
+					}
+					p
+					{
+						line-height: 30px;
+						margin-left: 12%;
+					}
+					
+				}
+			}
+			.navigation
+			{
+				margin-left: auto;
+				margin-right: auto;
+				width:300px;
+				display: flex;
+				list-style:none;
+				margin-top: 10px;
+				li
+				{
+					width: 25px;
+					height: 25px;
+					border-radius: 50%;
+					background-color: #eef4f2;
+					color: black;
+					margin: 4px;
+					text-align: center;
+					line-height: 25px;
+					cursor: pointer;
+				}
+				.active
+				{
+					color: #FFF;
+					background-color: $buttonColor;
+				}
+			}
+		}
+		.questions
+		{
+			h2
+			{
+				color: $headColor;
+				margin-bottom: 10px;
+			}
+			max-width: 50%;
+			
+			.acordion
+			{
+				width: 100%;;
+				background: none;
+				border-left: .5px solid #888;
+				border-bottom: .5px solid #888;
+				border-top: none;
+				border-right: none;
+				text-align: left;
+				height: 30px;
+				padding: 10px;
+				margin-bottom: 10px;
+				color: #888;
+				cursor: pointer;
+				font-size: 15px;
+				&:after
+				{
+					content: '\2795';
+					float: right;
+					color: $buttonColor;
+				}
+				&:hover
+				{
+					color: $buttonColor;
+				}
+				i
+				{
+					float: right;
+				}
+			}
+			.active:after
+			{
+				content: '\2796';
+				float: right;
+				color: $buttonColor;
+			}
+			.panel
+			{
+				margin-top: 10px;
+				margin-bottom: 20px;
+				padding: 5px;
+				display: none;
+				transition: .5s;
+				border-left: .5px solid $buttonColor;
+				border-bottom:none;
+				font-size: 15px;
+				
+			}
+		}
+	}
+}
+.ourCases
+{
+        background-color: #eef4f2;
+	    padding-top: 40px;
+	.container{
+		h2
+		{
+			color:$headColor;
+		}
+		.slider{
+			ul{
+				  
+			}
+			@include anm(0,-300px,-400px,-500px,-600px,-700px);
+		}
+	}
+	
+}
+.testimonials
+{
+	padding: 60px;
+	.container
+	{
+		h2
+		{
+			color: $headColor;
+			margin-bottom: 20px;
+		}
+		.details
+		{
+			display: flex;
+			img
+			{
+			   border-radius: 50%;
+				margin-right: 30px;
+			}
+			.text{
+				margin-top: 10px;
+				line-height: 1.5;
+				p
+			    {
+					margin-top: 9px;
+					margin-bottom: 9px;
+					
+			    }
+				i{
+					color: $headColor;
+					&:last-of-type
+					{
+						float: right;
+					}
+				}
+			}
+			
+		}
+	}
+}
+.ourTeam
+{
+	background-color: #eef4f2;
+	padding: 40px;
+	.container
+	{
+		
+		h2
+		{
+			color:$headColor;
+		}
+		width: 990px;
+		.slider{
+			width: 800px;
+			margin: 0 auto;
+			
+			ul {
+				h5
+				{
+					background-color: #FFF;
+				}
+				li{
+					margin: 10px;
+					
+					img{
+						width: 250px;
+						height: 300px;
+					}
+					
+				  }
+			}
+			@include anm(0,-100px,-150px,-200px,-250px,-260px);
+		}
+		button
+		{
+			margin-left: 40%;
+		}
+	}
+}
+.header-advertising.green
+{
+	background-color: $buttonColor;
+	margin-top: 0px;
+	padding: 50px 50px 20px;
+	font-size: 15px;
+	.advertising-text
+	{
+		h3
+		{
+			font-size: 20px;
+		   
+		}
+		h4
+		{
+			font-size: 25px;
+			
+		}
+		p{
+				color: #FFF;
+			}
+	}
+	.advertising-info
+	{
+		margin-right: 8px;
+		h4
+		{
+			border-left-color: #FFF;
+			p{
+				color: white;
+			}
+			
+		}
+		
+	}
+}
+.blog
+{
+	
+	padding: 50px;
+	.container
+	{
+		display: flex;
+	
+		.blog_img
+		{
+			img{
+				width: 445px;
+				height: 335px;
+				padding: 20px 20px 0 0;
+
+			}
+			h2
+			{
+				color:$headColor;
+				margin-bottom: 10px;
+			}
+		}
+		.text_blog
+		{
+			width: 600px;
+			h3
+			{
+				color: $headColor;
+				margin-bottom: 20px;
+				margin-top: 50px;
+			}
+			p{
+				margin: 20px 20px 40px 0;
+				font-size: 15px;
+				line-height: 20px;
+			}
+			hr
+			{
+				margin-bottom: 30px;
+			
+			}
+			span {
+				margin-right: 10px;
+			}
+			.white-button
+			{
+				display: block;
+				margin-top: 30px;
+				margin-left: 10px;
+			}
+		}
+	}
+	
+}

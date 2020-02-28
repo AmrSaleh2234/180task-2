@@ -1,0 +1,36 @@
+@mixin overlay($overLayBackground)
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width:100%;
+	height: 100%;
+	background-color: $overLayBackground;
+}
+@mixin anm($h1,$h2,$h3,$h4,$h5,$h6)
+{
+	
+	@keyframes sliding
+	{
+		0%
+		{
+			left:$h1;
+		}
+		20%
+		{
+			left:$h2;
+		}40%
+		{
+			left:$h3;
+		}60%
+		{
+			left:$h4;
+		}90%
+		{
+			left:$h5;
+		}100%
+		{
+			left:$h6;
+		}			
+	}
+}

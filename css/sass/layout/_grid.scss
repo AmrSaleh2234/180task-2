@@ -1,0 +1,63 @@
+* 
+{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body
+{
+	color: $fontColor;
+	font-family:  Sintony,sans-serif;
+}
+.container
+{
+	margin:auto;
+    width: 1100px;
+}
+	.header-advertising
+	{
+		font-family: "Sintony",sans-serif;
+		display: flex;
+		margin-top: 30px;
+		justify-content: space-between;
+		color: #FFF;
+		
+		.advertising-text
+		{
+			
+			margin-left: 120px;
+			h3
+			{
+				font-size: 25px
+			}
+			h4
+			{
+				font-size: 30px;
+			}
+			p {
+				color: #717477;
+			}
+		}
+		.advertising-info
+		{
+			display: flex;
+			margin-top: 20px;
+			margin-right: 148px;
+			height: 33px;
+			h4
+			 {
+				 
+				padding-left: 10px;
+				margin-right: 80px;
+				border-left:1.5px solid $buttonColor;
+                
+			    p:first-of-type
+				{
+					color: #41915c;
+
+				}
+			}
+		}
+		padding-bottom: 60px;
+		
+	}

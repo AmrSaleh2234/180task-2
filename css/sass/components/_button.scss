@@ -1,0 +1,15 @@
+.white-button
+{
+	border:1.5px solid $buttonColor;
+	background-color: transparent;
+	color: $buttonColor;
+	font-weight: bold;
+	width: 130px;
+	height: 40px;
+	border-radius: 30px;
+	cursor: pointer;
+	&:hover{
+	background-color: $buttonColor;
+		color:#FFF;
+	}
+}
